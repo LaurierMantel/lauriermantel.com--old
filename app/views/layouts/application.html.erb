@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Laurier Mantel</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <style>
+        .circular {
+        border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body id="page-top" class="index">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <% if home_page? %>
+                	<a class="navbar-brand" href="#page-top">Laurier Mantel</a>
+                <% else %>
+                	<%= link_to 'Laurier Mantel', root_path, class: "navbar-brand" %>
+                <% end %>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <% if home_page? %>
+	                    <li class="page-scroll">
+	                        <a href="#projects">Projects</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a href="#experience">Experience</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <%= link_to 'Contact', contact_path %>
+	                    </li>
+	                <% else %>
+	                	<li class="page-scroll">
+	                		<%= link_to 'Projects', root_path + '#projects' %>
+	                    </li>
+	                    <li class="page-scroll">
+	                    	<%= link_to 'Experience', root_path + "#experience" %>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <%= link_to 'Contact', contact_path %>
+	                    </li>
+	                <% end %>
+	                <li class="page-scroll">
+                        <%= link_to 'Resume', download_resume_path, class: "page-scroll" %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<%= yield %>
+	<footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Laurier Mantel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
