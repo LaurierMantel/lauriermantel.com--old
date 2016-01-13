@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
 	def create
 		@contact = contact_params
 		if @contact.save
-			LaurierNotifier.send_laurier_an_email(@contact).deliver
+			LaurierNotifier.send_laurier_an_email(@contact).deliver_later
 			flash.notice = "Thank you! I'll be in touch soon!"
 			redirect_to root_path
 		else
