@@ -5,5 +5,6 @@
 !/log/.keep
 /tmp
 
-config/secrets.yml
+/config/secrets.yml
+/config/newrelic.yml
 .bye_bug_history
