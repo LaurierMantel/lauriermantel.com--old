@@ -7,4 +7,4 @@
 
 /config/secrets.yml
 /config/newrelic.yml
-.bye_bug_history
+/.byebug_history
