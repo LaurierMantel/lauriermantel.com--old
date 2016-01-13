@@ -1,0 +1,9 @@
+<h1>Laurier: @contact.name <%= " from #{@contact.company} " if @contact.company != "" %> would like to get in touch.</h1>
+<% if @contact.message != "" %>
+	<h3>Message: </h3>
+	<p><%= @contact.message %></p>
+<% end %>
+<p>Send <%= @contact.name %> an email at <%= mail_to @contact.email %>.
+<% if @contact.phone_number != "" %>
+  <p>You can call <%= @contact.name %> at <%= @contact.phone_number %>.
+<% end %>
