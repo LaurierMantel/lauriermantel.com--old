@@ -2,8 +2,8 @@ class StaticPagesController < ApplicationController
   def home
   end
   def download_resume
-  	send_file("#{Rails.root}/public/LAURIER MANTEL JANUARY 2016 3.pdf",
-              filename: "LAURIER MANTEL JANUARY 2016 3.pdf",
+  	send_file("#{Rails.root}/public/LAURIER MANTEL JANUARY JULY 18.pdf",
+              filename: "LAURIER MANTEL JULY 18.pdf",
               type: "application/pdf")
   end
 end
