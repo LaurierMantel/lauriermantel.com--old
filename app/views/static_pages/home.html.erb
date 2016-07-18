@@ -1,68 +1,74 @@
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <%= image_tag 'LaurierMantel.jpg', size: "230x288", class: "img-responsive circular" %>
-                    <div class="intro-text">
-                        <span class="name">Laurier Mantel</span>
-                        <span class="skills">Full Stack Developer | Systems Design Engineering Student | Communitech Campus Rep</span>
-                    </div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <%= image_tag 'LaurierMantel.jpg', size: "230x288", class: "img-responsive circular" %>
+                <div class="intro-text">
+                    <span class="name">Laurier Mantel</span>
+                    <span class="skills">Full Stack Developer | Systems Design Engineering Student | Communitech Campus Rep</span>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                  <h2>Projects</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <h3><%= link_to 'SaveMe', 'http://www.getsaveme.com' %></h3>
-                    <p>SaveMe is a technology system to simplify and improve emergency response. </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <h3><%= link_to 'ReceiptSheep', 'https://github.com/lauriermantel/receiptsheep' %></h3>
-                    <p>At Hack The North we built a web app to improve the way expenses are approved.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <h3><%= link_to 'This website', 'https://github.com/lauriermantel/lauriermantel.com---current' %></h3>
-                    <p>Thrown together with Ruby on Rails and some HTML templating.  Uses Rails ActionMailer and the delayed_job gem to queue emails to be sent asynchronously.</p>
-                </div>
+<section id="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2>Projects</h2>
             </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Experience</h2>
-                </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h3><%= link_to 'SaveMe', 'http://www.getsaveme.com' %></h3>
+                <p>SaveMe is a technology system to simplify and improve emergency response. </p>
             </div>
-            <div class="row">
-                <h3 class="text-center">Shopify</h3>
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I was lucky enough to work at Shopify during my second co-op term as a full stack software developer from September 2015 to December 2015.  During my time there, I worked on Shopify's <em>Transfers</em> feature with the Inventory team.  We released the feature in November 2015 and I supported it until the end of my internship in December.  I really enjoyed the agile, test driven development environment and hope to continue to find workspaces that move quickly while building a high quality product.  </p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Some tools and frameworks I worked with at Shopify are Ruby on Rails, CoffeeScript, MySQL, Shopify's <%= link_to 'Turbograft', 'https://github.com/Shopify/turbograft', style: "color: #FFFCEF" %>, <%= link_to 'Large Hadron Migrator', 'https://github.com/soundcloud/lhm', style: "color: #FFFCEF;" %>, Google Analytics, and Shopify <%= link_to 'ShipIt', 'https://github.com/Shopify/shipit-engine', style: "color: #FFFCEF;" %> deployment engine.  I am very grateful for the opportunity to work with this amazing variety of tools.  Thank you, Shopify!</p>
-                </div>
+            <div class="col-md-4 text-center">
+                <h3><%= link_to 'ReceiptSheep', 'https://github.com/lauriermantel/receiptsheep' %></h3>
+                <p>At Hack The North we built a web app to improve the way expenses are approved.</p>
             </div>
-            <div class="row">
-                <h3 class="text-center">Grantek Systems Integration</h3>
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I really enjoyed my first co-op term at Grantek Systems Integration from January 2015 to April 2015.  I worked on Human Machine Interface applications for integrated manufacturing systems running on programmable logic controllers and supervisory control and data acquisition systems, in several projects for large industrial clients.  The software I used for this was <%= link_to 'Schneider Electric Vijeo Designer', 'http://www.schneider-electric.com/en/product-range/1054-vijeo-designer/', style: "color: #FFFCEF;" %> and <%= link_to 'Siemens WinCC', 'http://w3.siemens.com/mcms/human-machine-interface/en/visualization-software/scada/simatic-wincc/pages/default.aspx', style: "color: #FFFCEF;" %>. </p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I also developed some of my first web development experience at Grantek, and got to be part of a project deployed to Azure using ASP.NET and SQL Server.  It was here that I first learned model-view-controller paradigms as well as SQL syntax.  I really enjoyed this project and it inspired me to continue with web development in my career.  Thank you, Grantek!</p>
-                </div>
+            <div class="col-md-4 text-center">
+                <h3><%= link_to 'This website', 'https://github.com/lauriermantel/lauriermantel.com---current' %></h3>
+                <p>Thrown together with Ruby on Rails and some HTML templating.  Uses Rails ActionMailer and the delayed_job gem to queue emails to be sent asynchronously.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- About Section -->
+<section class="success" id="experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Experience</h2>
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="text-center">Shopify</h3>
+            <div class="col-lg-4 col-lg-offset-2">
+                <p>I was lucky enough to work at Shopify during my second co-op term as a full stack software developer from September 2015 to December 2015.  During my time there, I worked on Shopify's <em>Transfers</em> feature with the Inventory team.  We released the feature in November 2015 and I supported it until the end of my internship in December.  I really enjoyed the agile, test driven development environment and hope to continue to find workspaces that move quickly while building a high quality product.  </p>
+            </div>
+            <div class="col-lg-4">
+                <p>Some tools and frameworks I worked with at Shopify are Ruby on Rails, CoffeeScript, MySQL, Shopify's <%= link_to 'Turbograft', 'https://github.com/Shopify/turbograft', style: "color: #FFFCEF" %>, <%= link_to 'Large Hadron Migrator', 'https://github.com/soundcloud/lhm', style: "color: #FFFCEF;" %>, Google Analytics, and Shopify <%= link_to 'ShipIt', 'https://github.com/Shopify/shipit-engine', style: "color: #FFFCEF;" %> deployment engine.  I am very grateful for the opportunity to work with this amazing variety of tools.  Thank you, Shopify!</p>
+            </div>
+        </div>
+        <div class="row">
+            <h3 class="text-center">Grantek Systems Integration</h3>
+            <div class="col-lg-4 col-lg-offset-2">
+                <p>I really enjoyed my first co-op term at Grantek Systems Integration from January 2015 to April 2015.  I worked on Human Machine Interface applications for integrated manufacturing systems running on programmable logic controllers and supervisory control and data acquisition systems, in several projects for large industrial clients.  The software I used for this was <%= link_to 'Schneider Electric Vijeo Designer', 'http://www.schneider-electric.com/en/product-range/1054-vijeo-designer/', style: "color: #FFFCEF;" %> and <%= link_to 'Siemens WinCC', 'http://w3.siemens.com/mcms/human-machine-interface/en/visualization-software/scada/simatic-wincc/pages/default.aspx', style: "color: #FFFCEF;" %>. </p>
+            </div>
+            <div class="col-lg-4">
+                <p>I also developed some of my first web development experience at Grantek, and got to be part of a project deployed to Azure using ASP.NET and SQL Server.  It was here that I first learned model-view-controller paradigms as well as SQL syntax.  I really enjoyed this project and it inspired me to continue with web development in my career.  Thank you, Grantek!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+    $('.on-page').click(function(){
+        $('#bs-example-navbar-collapse-1').attr('aria-expanded', 'false');
+        $('#bs-example-navbar-collapse-1').attr('class', 'navbar-collapse collapse');
+    });
+</script>
