@@ -1,6 +1,14 @@
 <header>
     <div class="container">
         <div class="row">
+            <% if flash[:notice] %>
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <%= flash[:notice] %>
+                </div>
+            <% end %>
             <div class="col-lg-12">
                 <%= image_tag 'LaurierMantel.jpg', size: "230x288", class: "img-responsive circular" %>
                 <div class="intro-text">
